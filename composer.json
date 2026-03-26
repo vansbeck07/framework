@@ -18,15 +18,52 @@
   ],
   "minimum-stability": "stable",
   "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/dotenv",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/notify",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/phputils",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/dir-dot-config",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/string-utils",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/array-utils",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vansbeck07/os-utils",
+      "no-api": true
+    }
+  ],
   "require": {
     "php": "^8.3",
-    "vansbeck07/dotenv": "^0.4",
-    "vansbeck07/notify": "^0.0",
-    "vansbeck07/phputils": "^0.0",
-    "vansbeck07/dir-dot-config": "^0.0",
-    "vansbeck07/string-utils": "^0.0",
-    "vansbeck07/array-utils": "^0.0",
-    "vansbeck07/os-utils": "^0.0",
+    "vansbeck07/dotenv": "dev-main",
+    "vansbeck07/notify": "dev-main",
+    "vansbeck07/phputils": "dev-main",
+    "vansbeck07/dir-dot-config": "dev-main",
+    "vansbeck07/string-utils": "dev-main",
+    "vansbeck07/array-utils": "dev-main as 0.0.2",
+    "vanbeck07/os-utils": "dev-main",
     "psy/psysh": "^0.12",
     "illuminate/database": "^10.0 || ^11.0",
     "symfony/console": "^7.0",
@@ -36,6 +73,9 @@
   "require-dev": {
     "phpunit/phpunit": "^9.6 || ^10.5 || ^11.0",
     "nunomaduro/collision": "^7.0 || ^8.0"
+  },
+  "replace": {
+    "vanbeck07/string-utils": "0.0.999"
   },
   "config": {
     "optimize-autoloader": true
