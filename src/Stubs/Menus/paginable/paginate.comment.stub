@@ -1,0 +1,8 @@
+    /**
+     * Items to paginate.
+     *
+     * Do not use '->get()' or '->first()' on the query.
+     * Splash will perform it at the appropriate time.
+     *
+     * @return Splash\Database\QueryBuilder
+     */

@@ -1,0 +1,6 @@
+    /**
+     * Runs whenever the user is moving back.
+     *
+     * @param Splash\Foundation\UserResponse $previousResponses
+     * @return void
+     */

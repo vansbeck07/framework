@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Models;
+
+use Splash\Database\Model;
+
+class :className: extends Model
+{
+    //
+}

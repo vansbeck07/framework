@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Console\Commands;
+
+use Splash\Console\Argument;
+use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Option;
+
+class :commandClass: extends Root
+{
+    public function configure()
+    {
+        $this->setName(':commandName:')
+            ->setDescription("Get someone's name")
+            ->addArgument(
+                'name',
+                Argument::REQUIRED,
+                'The name of the person'
+            )
+            ->addOption(
+                'greet',
+                'g',
+                Option::NONE,
+                'If passed, we will greet the person after receiving the name',
+                null
+            );
+    }
+
+    public function fire()
+    {
+        $name = $this->getArgument('name');
+
+        $this->writeln('Cool, your name is '.$name);
+
+        if ($this->getOption('greet')) {
+            $this->writeln('Hello '.$name);
+        }
+
+        return Root::SUCCESS;
+    }
+}
