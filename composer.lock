@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "995d1dc756e9f04c3506a078ddf4fe8f",
+    "content-hash": "863e607e6e733bac68a3cb27d01eee0e",
     "packages": [
         {
             "name": "brick/math",
@@ -2370,51 +2370,6 @@
             "time": "2026-02-15T10:53:20+00:00"
         },
         {
-            "name": "vansbeck07/os-utils",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vansbeck07/os-utils",
-                "reference": "2c258eee4c41a7c214306b4c495cd8d9d96e841c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vansbeck07/os-utils/zipball/2c258eee4c41a7c214306b4c495cd8d9d96e841c",
-                "reference": "2c258eee4c41a7c214306b4c495cd8d9d96e841c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.3",
-                "vansbeck07/string-utils": "^0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^12.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "vansbeck07\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Evans Owusu Ofori",
-                    "email": "vansbeck07@gmail.com"
-                }
-            ],
-            "description": "Operating system utilities class",
-            "time": "2026-03-26T17:51:46+00:00"
-        },
-        {
             "name": "vansbeck07/array-utils",
             "version": "dev-main",
             "source": {
@@ -2509,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vansbeck07/dotenv",
-                "reference": "1ef233a1bb5613fc17b96abab19726b40c04381f"
+                "reference": "b74eb4056645d1a65d4348769931f6abab2d8665"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vansbeck07/dotenv/zipball/1ef233a1bb5613fc17b96abab19726b40c04381f",
-                "reference": "1ef233a1bb5613fc17b96abab19726b40c04381f",
+                "url": "https://api.github.com/repos/vansbeck07/dotenv/zipball/b74eb4056645d1a65d4348769931f6abab2d8665",
+                "reference": "b74eb4056645d1a65d4348769931f6abab2d8665",
                 "shasum": ""
             },
             "require": {
@@ -2563,7 +2518,7 @@
                 "env",
                 "phpdotenv"
             ],
-            "time": "2026-03-26T14:27:12+00:00"
+            "time": "2026-03-27T02:57:20+00:00"
         },
         {
             "name": "vansbeck07/notify",
@@ -2571,12 +2526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vansbeck07/notify",
-                "reference": "afad00876c011d926e4621c9d87d11d06404d3af"
+                "reference": "8e51deac4a31e0da8b7006f63650ccf1ff0a6238"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vansbeck07/notify/zipball/afad00876c011d926e4621c9d87d11d06404d3af",
-                "reference": "afad00876c011d926e4621c9d87d11d06404d3af",
+                "url": "https://api.github.com/repos/vansbeck07/notify/zipball/8e51deac4a31e0da8b7006f63650ccf1ff0a6238",
+                "reference": "8e51deac4a31e0da8b7006f63650ccf1ff0a6238",
                 "shasum": ""
             },
             "require": {
@@ -2611,7 +2566,52 @@
             ],
             "description": "Simple log package",
             "homepage": "https://github.com/vansbeck07/notify",
-            "time": "2026-03-26T14:32:04+00:00"
+            "time": "2026-03-27T02:58:23+00:00"
+        },
+        {
+            "name": "vansbeck07/os-utils",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vansbeck07/os-utils",
+                "reference": "fa5ecd221ec70733a504dc8c0d2529e845de9a0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vansbeck07/os-utils/zipball/fa5ecd221ec70733a504dc8c0d2529e845de9a0a",
+                "reference": "fa5ecd221ec70733a504dc8c0d2529e845de9a0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.3",
+                "vansbeck07/string-utils": "^0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vansbeck07\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Evans Owusu Ofori",
+                    "email": "vansbeck07@gmail.com"
+                }
+            ],
+            "description": "Operating system utilities class",
+            "time": "2026-03-27T02:59:09+00:00"
         },
         {
             "name": "vansbeck07/phputils",
@@ -2619,12 +2619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vansbeck07/phputils",
-                "reference": "c99c5984ec26e1fd7dfe88f832bb7a2fce57934c"
+                "reference": "5d0651f2ad96ddeda7072965c92a22246c344497"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vansbeck07/phputils/zipball/c99c5984ec26e1fd7dfe88f832bb7a2fce57934c",
-                "reference": "c99c5984ec26e1fd7dfe88f832bb7a2fce57934c",
+                "url": "https://api.github.com/repos/vansbeck07/phputils/zipball/5d0651f2ad96ddeda7072965c92a22246c344497",
+                "reference": "5d0651f2ad96ddeda7072965c92a22246c344497",
                 "shasum": ""
             },
             "require": {
@@ -2654,51 +2654,7 @@
                 "php",
                 "utils"
             ],
-            "time": "2026-03-26T14:38:16+00:00"
-        },
-        {
-            "name": "vansbeck07/string-utils",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vansbeck07/string-utils",
-                "reference": "9a6e796a512346d95d40aa433d7e488ac8b16967"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vansbeck07/string-utils/zipball/9a6e796a512346d95d40aa433d7e488ac8b16967",
-                "reference": "9a6e796a512346d95d40aa433d7e488ac8b16967",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^11.5"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Vansbeck07\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Evans Owusu Ofori",
-                    "email": "vansbeck07@gmail.com"
-                }
-            ],
-            "description": "PHP string utility methods",
-            "time": "2026-03-26T17:48:13+00:00"
+            "time": "2026-03-27T03:02:26+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -4814,13 +4770,12 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "vansbeck07/os-utils": 20,
         "vansbeck07/array-utils": 20,
         "vansbeck07/dir-dot-config": 20,
         "vansbeck07/dotenv": 20,
         "vansbeck07/notify": 20,
-        "vansbeck07/phputils": 20,
-        "vansbeck07/string-utils": 20
+        "vansbeck07/os-utils": 20,
+        "vansbeck07/phputils": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

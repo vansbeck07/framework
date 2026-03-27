@@ -61,7 +61,6 @@
     "vansbeck07/notify": "dev-main",
     "vansbeck07/phputils": "dev-main",
     "vansbeck07/dir-dot-config": "dev-main",
-    "vansbeck07/string-utils": "dev-main",
     "vansbeck07/array-utils": "dev-main as 0.0.2",
     "vansbeck07/os-utils": "dev-main",
     "psy/psysh": "^0.12",
