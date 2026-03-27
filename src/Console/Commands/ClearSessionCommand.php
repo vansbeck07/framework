@@ -2,10 +2,10 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 use Symfony\Component\Finder\Finder;
 
-class ClearSessionCommand extends Root
+class ClearSessionCommand extends Smile
 {
     public function configure()
     {
@@ -25,11 +25,11 @@ class ClearSessionCommand extends Root
             $this->error('Error!');
             $this->write($th->getMessage().' in '.$th->getFile().' at line '.$th->getLine());
 
-            return Root::FAILURE;
+            return Smile::FAILURE;
         }
 
         $this->info('Session cleared successfully!');
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 }

@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 
-class :commandClass: extends Root
+class :commandClass: extends Smile
 {
     public function configure()
     {
@@ -17,6 +17,6 @@ class :commandClass: extends Root
     {
         //
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 }

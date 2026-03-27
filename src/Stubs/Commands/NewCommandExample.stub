@@ -3,10 +3,10 @@
 namespace App\Console\Commands;
 
 use Splash\Console\Argument;
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 use Splash\Console\Option;
 
-class :commandClass: extends Root
+class :commandClass: extends Smile
 {
     public function configure()
     {
@@ -36,6 +36,6 @@ class :commandClass: extends Root
             $this->writeln('Hello '.$name);
         }
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 }

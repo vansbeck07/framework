@@ -2,7 +2,7 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 use Splash\Foundation\Path;
 use Symfony\Component\Process\Exception\ProcessSignaledException;
 use Symfony\Component\Process\Process;
@@ -10,7 +10,7 @@ use Symfony\Component\Process\Process;
 /**
  * To look at.
  */
-class RunTestCommand extends Root
+class RunTestCommand extends Smile
 {
     public function configure()
     {
@@ -41,6 +41,6 @@ class RunTestCommand extends Root
         //     }
         // }
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 }

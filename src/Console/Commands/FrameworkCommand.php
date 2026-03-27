@@ -10,7 +10,7 @@ use Splash\Foundation\Kernel as Splash;
  *
  * @author Evans Owusu Ofori <vansbeck07@gmail.com>
  */
-class FrameworkCommand extends RootCommand
+class FrameworkCommand extends SmileCommand
 {
     /**
      * Instance of Splash.

@@ -25,7 +25,7 @@ class NewModelCommand extends FrameworkCommand
             "Model file $file already exists.",
             '<fg=yellow>Do you want to overwrite this file?</>',
         ])) {
-            return RootCommand::FAILURE;
+            return SmileCommand::FAILURE;
         }
 
         if ($this->writeClassInFile($file, $class)) {
@@ -33,10 +33,10 @@ class NewModelCommand extends FrameworkCommand
                 $this->colorize('Model successfully created in '.$this->path()->fromAppDir($file), 'green'),
             ]);
 
-            return RootCommand::SUCCESS;
+            return SmileCommand::SUCCESS;
         }
 
-        return RootCommand::FAILURE;
+        return SmileCommand::FAILURE;
     }
 
     public function writeClassInFile($file, $className)

@@ -2,10 +2,10 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 use Symfony\Component\Finder\Finder;
 
-class ClearCacheCommand extends Root
+class ClearCacheCommand extends Smile
 {
     protected $defaultCacheFiles = ['log-count.cache', 'splash.cache'];
 
@@ -33,11 +33,11 @@ class ClearCacheCommand extends Root
             $this->error('Error!');
             $this->write($th->getMessage().' in '.$th->getFile().' at line '.$th->getLine());
 
-            return Root::FAILURE;
+            return Smile::FAILURE;
         }
 
         $this->info('Cache cleared successfully!');
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 }

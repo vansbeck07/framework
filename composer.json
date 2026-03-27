@@ -1,5 +1,5 @@
 {
-  "name": "vansbeck07/framework",
+  "name": "splash/framework",
   "type": "library",
   "description": "Write easily your USSD based applications.",
   "keywords": [
@@ -21,38 +21,31 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/dotenv",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/phputils"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/notify",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/dotenv"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/phputils",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/notify"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/dir-dot-config",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/dir-dot-config"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/string-utils",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/array-utils"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/array-utils",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/string-utils"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vansbeck07/os-utils",
-      "no-api": true
+      "url": "https://github.com/vansbeck07/os-utils"
     }
   ],
   "require": {
@@ -61,20 +54,17 @@
     "vansbeck07/notify": "dev-main",
     "vansbeck07/phputils": "dev-main",
     "vansbeck07/dir-dot-config": "dev-main",
+    "vansbeck07/string-utils": "dev-main as 0.0.99",
     "vansbeck07/array-utils": "dev-main as 0.0.2",
     "vansbeck07/os-utils": "dev-main",
     "psy/psysh": "^0.12",
-    "illuminate/database": "^10.0 || ^11.0",
-    "symfony/console": "^7.0",
+    "illuminate/database": "^12.0",
     "symfony/finder": "^7.0",
     "peppeocchi/php-cron-scheduler": "^4.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.6 || ^10.5 || ^11.0",
-    "nunomaduro/collision": "^7.0 || ^8.0"
-  },
-  "replace": {
-    "vansbeck07/string-utils": "0.0.999"
+    "phpunit/phpunit": "^11.5",
+    "nunomaduro/collision": "^8.8"
   },
   "config": {
     "optimize-autoloader": true

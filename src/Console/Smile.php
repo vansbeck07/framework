@@ -9,7 +9,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class Root extends Command
+class Smile extends Command
 {
     use QuestionTrait;
     use StyleSheetTrait;
@@ -51,7 +51,7 @@ class Root extends Command
      *
      * @return int
      */
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function execute(InputInterface $input, OutputInterface $output)
     {
         $this->input = $input;
         $this->output = $output;

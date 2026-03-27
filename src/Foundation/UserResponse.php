@@ -18,8 +18,6 @@ namespace Splash\Foundation;
  */
 class UserResponse implements \ArrayAccess
 {
-    protected $responses = [];
-
     public function __construct($responses)
     {
         $this->responses = $responses;
@@ -79,17 +77,17 @@ class UserResponse implements \ArrayAccess
     }
 
     // ArrayAccess Interface
-    public function offsetExists(mixed $menuName): bool
+    public function offsetExists($menuName)
     {
         return isset($this->responses[$menuName]);
     }
 
-    public function offsetGet(mixed $menuName): mixed
+    public function offsetGet($menuName)
     {
         return $this->getAll($menuName);
     }
 
-    public function offsetSet(mixed $menuName, mixed $value): void
+    public function offsetSet($menuName, $value)
     {
         if (!is_array($value)) {
             throw new \Exception('User response must be contain an array');
@@ -102,7 +100,7 @@ class UserResponse implements \ArrayAccess
         }
     }
 
-    public function offsetUnset(mixed $offset): void
+    public function offsetUnset($offset)
     {
         unset($this->responses[$offset]);
     }

@@ -2,11 +2,11 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 use Splash\Console\Option;
 use Symfony\Component\Finder\Finder;
 
-class ClearLogCommand extends Root
+class ClearLogCommand extends Smile
 {
     protected $defaultLogDirs = ['menus'];
     protected $defaultLogFiles = ['splash.log'];
@@ -80,12 +80,12 @@ class ClearLogCommand extends Root
             $this->error('Error!');
             $this->write($th->getMessage().' in '.$th->getFile().' at line '.$th->getLine());
 
-            return Root::FAILURE;
+            return Smile::FAILURE;
         }
 
         $this->info('Logs cleared successfully!');
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 
     public function defaultLogs()

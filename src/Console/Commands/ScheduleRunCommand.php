@@ -2,10 +2,10 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Root;
+use Splash\Console\Commands\FrameworkCommand as Smile;
 use Splash\Jobs\Scheduler;
 
-class ScheduleRunCommand extends Root
+class ScheduleRunCommand extends Smile
 {
     public function configure()
     {
@@ -25,6 +25,6 @@ class ScheduleRunCommand extends Root
 
         $scheduler->run();
 
-        return Root::SUCCESS;
+        return Smile::SUCCESS;
     }
 }

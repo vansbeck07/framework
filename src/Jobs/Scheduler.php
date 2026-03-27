@@ -34,17 +34,17 @@ class Scheduler extends BaseScheduler
      *
      * @return \Symfony\Component\Console\Output\OutputInterface
      */
-    public function getRootOutput()
+    public function getSmileOutput()
     {
         return $this->schedulerCommand->getOutput();
     }
 
     /**
-     * Root console application.
+     * Smile console application.
      *
      * @return \Symfony\Component\Console\Application
      */
-    public function getRoot()
+    public function getSmile()
     {
         return $this->schedulerCommand->getApplication();
     }
@@ -70,7 +70,7 @@ class Scheduler extends BaseScheduler
     }
 
     /**
-     * Schedule a Root Command.
+     * Schedule a Smile Command.
      *
      * @param array|string|null $arguments
      *
@@ -80,7 +80,7 @@ class Scheduler extends BaseScheduler
     {
         return $this->call(function (string $commandName, $arguments) {
             try {
-                $command = $this->getRoot()->find($commandName);
+                $command = $this->getSmile()->find($commandName);
 
                 $input = $this->resolveInput($arguments);
                 $output = new BufferedOutput();

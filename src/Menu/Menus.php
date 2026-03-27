@@ -28,7 +28,6 @@ class Menus implements \ArrayAccess
      * @var Kernel
      */
     protected $app;
-    protected $session;
 
     /**
      * The menus retrieved from the menus.php|json file.
@@ -665,17 +664,17 @@ class Menus implements \ArrayAccess
     }
 
     // ArrayAccess Interface
-    public function offsetExists(mixed $offset): bool
+    public function offsetExists($offset)
     {
         return isset($this->menus[$offset]);
     }
 
-    public function offsetGet(mixed $offset): mixed
+    public function offsetGet($offset)
     {
         return $this->menus[$offset];
     }
 
-    public function offsetSet(mixed $offset, mixed $value): void
+    public function offsetSet($offset, $value)
     {
         if (is_null($offset)) {
             $this->menus[] = $value;
@@ -684,7 +683,7 @@ class Menus implements \ArrayAccess
         }
     }
 
-    public function offsetUnset(mixed $offset): void
+    public function offsetUnset($offset)
     {
         unset($this->menus[$offset]);
     }

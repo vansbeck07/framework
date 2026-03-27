@@ -39,7 +39,7 @@ class GenerateMenuJsonCommand extends FrameworkCommand
         if (!file_exists($menusPath)) {
             $this->writeln('Menus to generate not found at '.$menusPath);
 
-            return RootCommand::FAILURE;
+            return SmileCommand::FAILURE;
         }
 
         $overwrite = true;
@@ -61,12 +61,12 @@ class GenerateMenuJsonCommand extends FrameworkCommand
             } else {
                 $this->writeln('<fg=red>Error when generating the json file at '.$jsonPath.'</>');
 
-                return RootCommand::FAILURE;
+                return SmileCommand::FAILURE;
             }
         } else {
             $this->writeln('menus.json generation discarded.');
         }
 
-        return RootCommand::SUCCESS;
+        return SmileCommand::SUCCESS;
     }
 }
