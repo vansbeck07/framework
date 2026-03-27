@@ -63,7 +63,7 @@
     "vansbeck07/dir-dot-config": "dev-main",
     "vansbeck07/string-utils": "dev-main",
     "vansbeck07/array-utils": "dev-main as 0.0.2",
-    "vanbeck07/os-utils": "dev-main",
+    "vansbeck07/os-utils": "dev-main",
     "psy/psysh": "^0.12",
     "illuminate/database": "^10.0 || ^11.0",
     "symfony/console": "^7.0",
@@ -75,7 +75,7 @@
     "nunomaduro/collision": "^7.0 || ^8.0"
   },
   "replace": {
-    "vanbeck07/string-utils": "0.0.999"
+    "vansbeck07/string-utils": "0.0.999"
   },
   "config": {
     "optimize-autoloader": true

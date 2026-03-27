@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "387f72952911cae5259a43f435a0b98b",
+    "content-hash": "995d1dc756e9f04c3506a078ddf4fe8f",
     "packages": [
         {
             "name": "brick/math",
@@ -2370,7 +2370,7 @@
             "time": "2026-02-15T10:53:20+00:00"
         },
         {
-            "name": "vanbeck07/os-utils",
+            "name": "vansbeck07/os-utils",
             "version": "dev-main",
             "source": {
                 "type": "git",
@@ -2385,7 +2385,7 @@
             },
             "require": {
                 "php": "^8.3",
-                "vanbeck07/string-utils": "^0.0"
+                "vansbeck07/string-utils": "^0.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^12.0"
@@ -2394,7 +2394,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Vanbeck07\\": "src/"
+                    "vansbeck07\\": "src/"
                 }
             },
             "autoload-dev": {
@@ -2408,7 +2408,7 @@
             "authors": [
                 {
                     "name": "Evans Owusu Ofori",
-                    "email": "vanbeck07@gmail.com"
+                    "email": "vansbeck07@gmail.com"
                 }
             ],
             "description": "Operating system utilities class",
@@ -2464,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vansbeck07/dir-dot-config",
-                "reference": "03a26989aa0e4b18014266f0991a81c6c57eddfd"
+                "reference": "db11afa7a6cf7ffc369e67964506972b54c3219d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vansbeck07/dir-dot-config/zipball/03a26989aa0e4b18014266f0991a81c6c57eddfd",
-                "reference": "03a26989aa0e4b18014266f0991a81c6c57eddfd",
+                "url": "https://api.github.com/repos/vansbeck07/dir-dot-config/zipball/db11afa7a6cf7ffc369e67964506972b54c3219d",
+                "reference": "db11afa7a6cf7ffc369e67964506972b54c3219d",
                 "shasum": ""
             },
             "require": {
@@ -2501,7 +2501,7 @@
                 }
             ],
             "description": "Retrieve configuration from files in configuration directory.",
-            "time": "2026-03-26T18:01:58+00:00"
+            "time": "2026-03-26T18:35:59+00:00"
         },
         {
             "name": "vansbeck07/dotenv",
@@ -4814,7 +4814,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "vanbeck07/os-utils": 20,
+        "vansbeck07/os-utils": 20,
         "vansbeck07/array-utils": 20,
         "vansbeck07/dir-dot-config": 20,
         "vansbeck07/dotenv": 20,
