@@ -2,10 +2,10 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Smile;
+use Splash\Console\Commands\FrameworkCommand as Wow;
 use Symfony\Component\Finder\Finder;
 
-class ClearCacheCommand extends Smile
+class ClearCacheCommand extends Wow
 {
     protected $defaultCacheFiles = ['log-count.cache', 'splash.cache'];
 
@@ -33,11 +33,11 @@ class ClearCacheCommand extends Smile
             $this->error('Error!');
             $this->write($th->getMessage().' in '.$th->getFile().' at line '.$th->getLine());
 
-            return Smile::FAILURE;
+            return Wow::FAILURE;
         }
 
         $this->info('Cache cleared successfully!');
 
-        return Smile::SUCCESS;
+        return Wow::SUCCESS;
     }
 }

@@ -39,7 +39,7 @@ class GenerateMenuJsonCommand extends FrameworkCommand
         if (!file_exists($menusPath)) {
             $this->writeln('Menus to generate not found at '.$menusPath);
 
-            return SmileCommand::FAILURE;
+            return WowCommand::FAILURE;
         }
 
         $overwrite = true;
@@ -61,12 +61,12 @@ class GenerateMenuJsonCommand extends FrameworkCommand
             } else {
                 $this->writeln('<fg=red>Error when generating the json file at '.$jsonPath.'</>');
 
-                return SmileCommand::FAILURE;
+                return WowCommand::FAILURE;
             }
         } else {
             $this->writeln('menus.json generation discarded.');
         }
 
-        return SmileCommand::SUCCESS;
+        return WowCommand::SUCCESS;
     }
 }

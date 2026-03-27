@@ -2,7 +2,7 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Smile;
+use Splash\Console\Commands\FrameworkCommand as Wow;
 use Splash\Foundation\Path;
 use Symfony\Component\Process\Exception\ProcessSignaledException;
 use Symfony\Component\Process\Process;
@@ -10,7 +10,7 @@ use Symfony\Component\Process\Process;
 /**
  * To look at.
  */
-class RunTestCommand extends Smile
+class RunTestCommand extends Wow
 {
     public function configure()
     {
@@ -41,6 +41,6 @@ class RunTestCommand extends Smile
         //     }
         // }
 
-        return Smile::SUCCESS;
+        return Wow::SUCCESS;
     }
 }

@@ -99,7 +99,7 @@ class NewMenuCommand extends FrameworkCommand
             $this->writeln('Menu creation discarded.');
         }
 
-        return SmileCommand::SUCCESS;
+        return WowCommand::SUCCESS;
     }
 
     public function writeClassInFile($path, $fileName)
@@ -359,10 +359,10 @@ class NewMenuCommand extends FrameworkCommand
     public function help()
     {
         return
-            "php smile make:menu EnterName
+            "php wow make:menu EnterName
     Will create the menu class 'EnterName' in app/Menus/EnterName.php file.
 
-php smile make:menu UserPurchaseFlow/GetName
+php wow make:menu UserPurchaseFlow/GetName
     Will create the class 'GetName' in app/Menus/UserPurchaseFlow/GetName.php
 
 Use the '-x' or '--no-comment' option to create the menu without the generated comment.";

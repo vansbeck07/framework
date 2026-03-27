@@ -3,10 +3,10 @@
 namespace App\Console\Commands;
 
 use Splash\Console\Argument;
-use Splash\Console\Commands\FrameworkCommand as Smile;
+use Splash\Console\Commands\FrameworkCommand as Wow;
 use Splash\Console\Option;
 
-class :commandClass: extends Smile
+class :commandClass: extends Wow
 {
     public function configure()
     {
@@ -36,6 +36,6 @@ class :commandClass: extends Smile
             $this->writeln('Hello '.$name);
         }
 
-        return Smile::SUCCESS;
+        return Wow::SUCCESS;
     }
 }

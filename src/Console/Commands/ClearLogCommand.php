@@ -2,11 +2,11 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Smile;
+use Splash\Console\Commands\FrameworkCommand as Wow;
 use Splash\Console\Option;
 use Symfony\Component\Finder\Finder;
 
-class ClearLogCommand extends Smile
+class ClearLogCommand extends Wow
 {
     protected $defaultLogDirs = ['menus'];
     protected $defaultLogFiles = ['splash.log'];
@@ -80,12 +80,12 @@ class ClearLogCommand extends Smile
             $this->error('Error!');
             $this->write($th->getMessage().' in '.$th->getFile().' at line '.$th->getLine());
 
-            return Smile::FAILURE;
+            return Wow::FAILURE;
         }
 
         $this->info('Logs cleared successfully!');
 
-        return Smile::SUCCESS;
+        return Wow::SUCCESS;
     }
 
     public function defaultLogs()

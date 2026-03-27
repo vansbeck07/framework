@@ -27,7 +27,7 @@ class DevtoolCommand extends FrameworkCommand
         if (!class_exists('Psy\Shell')) {
             $this->writeln("Devtool not installed. Run `{$this->colorize('composer require psy/psysh', 'yellow')}` to install it.");
 
-            return SmileCommand::FAILURE;
+            return WowCommand::FAILURE;
         }
 
         $this->getApplication()->setCatchExceptions(false);

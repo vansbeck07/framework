@@ -86,13 +86,13 @@ class SimulatorConsoleCommand extends FrameworkCommand
         if (!$this->endpoint || !URL::isUrl($this->endpoint)) {
             $this->writeWithColor('Invalid endpoint "'.$this->endpoint.'"', 'red');
 
-            return SmileCommand::FAILURE;
+            return WowCommand::FAILURE;
         }
 
         if (!($tel = $this->getOption('tel'))) {
             $this->writeWithColor('Invalid phone number "'.$tel.'"', 'red');
 
-            return SmileCommand::FAILURE;
+            return WowCommand::FAILURE;
         }
 
         return $this->simulate();
@@ -135,11 +135,11 @@ class SimulatorConsoleCommand extends FrameworkCommand
             } else {
                 $this->showErrors($response);
 
-                return SmileCommand::FAILURE;
+                return WowCommand::FAILURE;
             }
         }
 
-        return SmileCommand::SUCCESS;
+        return WowCommand::SUCCESS;
     }
 
     public function dial()

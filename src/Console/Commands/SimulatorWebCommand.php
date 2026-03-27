@@ -37,7 +37,7 @@ class SimulatorWebCommand extends FrameworkCommand
                 'Run `composer require splash/simulator` to install it.',
             ]);
 
-            return SmileCommand::FAILURE;
+            return WowCommand::FAILURE;
         }
 
         $ip = $this->getOption('host');
@@ -51,6 +51,6 @@ class SimulatorWebCommand extends FrameworkCommand
 
         Simulator::serve($ip, $port);
 
-        return SmileCommand::SUCCESS;
+        return WowCommand::SUCCESS;
     }
 }

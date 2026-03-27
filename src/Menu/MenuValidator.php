@@ -39,7 +39,7 @@ class MenuValidator extends Validator
             $errors = [];
             $warnings = [];
 
-            if (!preg_match('/[a-z][a-z0-9_]+/i', $menuName) !== 1) {
+            if (preg_match('/[a-z][a-z0-9_]+/i', $menuName) !== 1) {
                 $errors['about_menu_name'] = $menuName.' is an invalid menu name. Only letters, numbers and underscores are allowed.';
             }
 
@@ -57,7 +57,7 @@ class MenuValidator extends Validator
                 $actionsErrors = 'The actions of this menu must be an array.';
             } else {
                 foreach ($menu[ACTIONS] as $key => $value) {
-                    if (!preg_match('/[a-z0-9_]+/i', $key) !== 1) {
+                    if (preg_match('/[a-z0-9_]+/i', $key) !== 1) {
                         $actionsErrors[] = 'The key '.$key.' has an invalid format. Only letters, numbers and underscore are allowed.';
                     }
 

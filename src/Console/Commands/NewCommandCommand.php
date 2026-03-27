@@ -41,7 +41,7 @@ class NewCommandCommand extends FrameworkCommand
             "Command file $file already exists.",
             '<fg=yellow>Do you want to overwrite this file?</>',
         ])) {
-            return SmileCommand::FAILURE;
+            return WowCommand::FAILURE;
         }
 
         if ($this->writeClassInFile($file, $commandClass)) {
@@ -54,10 +54,10 @@ class NewCommandCommand extends FrameworkCommand
                 "Register the command in $commandRepo to make it available to the application.",
             ]);
 
-            return SmileCommand::SUCCESS;
+            return WowCommand::SUCCESS;
         }
 
-        return SmileCommand::FAILURE;
+        return WowCommand::FAILURE;
     }
 
     public function writeClassInFile($file, $commandClass)

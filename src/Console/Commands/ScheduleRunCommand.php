@@ -2,10 +2,10 @@
 
 namespace Splash\Console\Commands;
 
-use Splash\Console\Commands\FrameworkCommand as Smile;
+use Splash\Console\Commands\FrameworkCommand as Wow;
 use Splash\Jobs\Scheduler;
 
-class ScheduleRunCommand extends Smile
+class ScheduleRunCommand extends Wow
 {
     public function configure()
     {
@@ -25,6 +25,6 @@ class ScheduleRunCommand extends Smile
 
         $scheduler->run();
 
-        return Smile::SUCCESS;
+        return Wow::SUCCESS;
     }
 }

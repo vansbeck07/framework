@@ -17,7 +17,7 @@ trait QuestionTrait
      * @param string $question The question to ask
      * @param mixed  $default  The default value of the response
      *
-     * @return void
+     * @return mixed
      */
     public function ask($question, $default = null)
     {

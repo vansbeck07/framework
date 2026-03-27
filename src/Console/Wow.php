@@ -9,7 +9,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class Smile extends Command
+class Wow extends Command
 {
     use QuestionTrait;
     use StyleSheetTrait;
@@ -161,9 +161,9 @@ class Smile extends Command
      * @param bool            $newline  Whether to add a newline
      * @param int             $options  A bitmask of options (one of the OUTPUT or VERBOSITY constants), is considered the same as self::OUTPUT_NORMAL | self::VERBOSITY_NORMAL
      */
-    public function write($messages, bool $newline = false, int $options = 0)
+    public function write(string|iterable $messages, bool $newline = false, int $options = 0): void
     {
-        return $this->getOutput()->write(...(func_get_args()));
+        $this->getOutput()->write($messages, $newline, $options);
     }
 
     /**
@@ -171,11 +171,9 @@ class Smile extends Command
      *
      * @param string|iterable $messages The message to write. Can be a string or an iterable of strings
      * @param int             $options  A bitmask of options (one of the OUTPUT or VERBOSITY constants), is considered the same as self::OUTPUT_NORMAL | self::VERBOSITY_NORMAL
-     *
-     * @return mixed
      */
-    public function writeln($messages, int $options = 0)
+    public function writeln(string|iterable $messages, int $options = 0): void
     {
-        return $this->getOutput()->writeln(...(func_get_args()));
+        $this->getOutput()->writeln($messages, $options);
     }
 }
